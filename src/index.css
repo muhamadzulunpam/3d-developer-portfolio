@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply bg-night-950 font-sans text-ink antialiased;
+    overflow-x: hidden;
+  }
+
+  /* Scrollbar tipis agar konsisten dengan tema gelap */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #05081c;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #3b6fff, #8b5cf6);
+    border-radius: 999px;
+  }
+
+  ::selection {
+    background: rgba(139, 92, 246, 0.35);
+    color: #ffffff;
+  }
+
+  :focus-visible {
+    outline: 2px solid #5b8cff;
+    outline-offset: 3px;
+  }
+}
+
+@layer components {
+  /* Glassmorphism: dipakai ulang di navbar, card, dan panel */
+  .glass {
+    @apply border border-white/[0.08] bg-white/[0.04] backdrop-blur-xl;
+  }
+
+  .glass-strong {
+    @apply border border-white/[0.1] bg-night-900/70 backdrop-blur-2xl;
+  }
+
+  .text-gradient {
+    @apply bg-aurora bg-clip-text text-transparent;
+  }
+
+  /* Garis tepi bergradien untuk kartu interaktif */
+  .ring-aurora {
+    position: relative;
+  }
+  .ring-aurora::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(140deg, rgba(59, 111, 255, 0.65), rgba(139, 92, 246, 0.45), transparent 70%);
+    -webkit-mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  .section-shell {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8 lg:px-10;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* Selector harus lebih spesifik dari utility .scroll-smooth, kalau tidak
+     kelas tersebut tetap menang dan gulir halus tidak pernah dimatikan. */
+  html,
+  html.scroll-smooth {
+    scroll-behavior: auto;
+  }
+}

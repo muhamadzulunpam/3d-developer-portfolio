@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Muhamad Zul Sa'ban — Web Developer">
+  <defs>
+    <linearGradient id="brand" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3b6fff" />
+      <stop offset="0.55" stop-color="#8b5cf6" />
+      <stop offset="1" stop-color="#38e0ff" />
+    </linearGradient>
+    <radialGradient id="glowA" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3b6fff" stop-opacity="0.42" />
+      <stop offset="1" stop-color="#3b6fff" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glowB" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.38" />
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0v48" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="#030411" />
+  <rect width="1200" height="630" fill="url(#grid)" />
+  <circle cx="1010" cy="120" r="330" fill="url(#glowA)" />
+  <circle cx="180" cy="560" r="300" fill="url(#glowB)" />
+
+  <!-- Monogram -->
+  <rect x="90" y="86" width="96" height="96" rx="26" fill="#05081c" stroke="url(#brand)" stroke-width="3" />
+  <path
+    d="M112 158v-46l15 23 15-23v46"
+    fill="none"
+    stroke="url(#brand)"
+    stroke-width="6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M164 116h17l-17 20h17"
+    fill="none"
+    stroke="url(#brand)"
+    stroke-width="6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <text x="210" y="150" fill="#8ab0ff" font-family="ui-monospace, monospace" font-size="24" letter-spacing="7">WEB DEVELOPER</text>
+
+  <text x="90" y="320" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="76" font-weight="600">Muhamad Zul Sa'ban</text>
+
+  <text x="90" y="392" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="40" font-weight="500">
+    <tspan fill="url(#brand)">Building Modern &amp; Interactive</tspan>
+    <tspan x="90" dy="52" fill="url(#brand)">Web Applications</tspan>
+  </text>
+
+  <text x="90" y="548" fill="#9aa6c8" font-family="ui-monospace, monospace" font-size="21" letter-spacing="2">REACT.JS · TYPESCRIPT · TAILWIND CSS · FRAMER MOTION · THREE.JS</text>
+
+  <rect x="0" y="626" width="1200" height="4" fill="url(#brand)" />
+</svg>

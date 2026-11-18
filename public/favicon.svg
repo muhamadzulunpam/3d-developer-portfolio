@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Logo MZ">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3b6fff" />
+      <stop offset="0.55" stop-color="#8b5cf6" />
+      <stop offset="1" stop-color="#38e0ff" />
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="#030411" stroke="url(#g)" stroke-width="2" />
+  <path
+    d="M17 46V18l9 14 9-14v28"
+    fill="none"
+    stroke="url(#g)"
+    stroke-width="4"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M43 20h10l-10 12h10"
+    fill="none"
+    stroke="url(#g)"
+    stroke-width="4"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
