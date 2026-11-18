@@ -50,7 +50,7 @@ Pastikan perangkat sudah memiliki:
 **1. Clone repository**
 
 ```bash
-git clone https://github.com/USERNAME/portofolio-developer-3d.git
+git clone https://github.com/muhamadzulunpam/3d-developer-portfolio.git
 ```
 
 **2. Masuk ke direktori proyek**
